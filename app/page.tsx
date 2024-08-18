@@ -29,7 +29,7 @@ export default function Home() {
         <span className="absolute -top-2 -right-2 z-20 inline-flex h-5 w-5 rounded-full text-xs font-bold text-center">{JSON.parse(localStorage.getItem("cartItems") || "[]").length}</span>
         <Image alt="cart" src="/cart.png" height={50} width={50} className="rounded-full" />
       </Link>
-      {products.map((product: ProductInterface) => <ProductCard product={product} setShowSuccessMessage={setShowSuccessMessage} />)}
+      {products.map((product: ProductInterface) => <ProductCard key={product.id} product={product} setShowSuccessMessage={setShowSuccessMessage} />)}
       {showSuccessMessage && <div className="bg-white fixed bottom-5 px-5 py-2 border-2 rounded-md">&#9989; Item added successfully</div>}
     </div>
   );

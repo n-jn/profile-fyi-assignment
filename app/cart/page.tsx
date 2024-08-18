@@ -26,7 +26,7 @@ export default function Cart() {
 
     return <>
         <div className="font-bold p-5 text-xl">Cart</div>
-        {items.map((item: CartItemInterface) => {subtotal+=item.price*item.quantity; return <CartItem item={item} handleDeleteItem={handleDeleteItem} handleUpdateQty={handleUpdateQty} />;})}
+        {items.map((item: CartItemInterface) => {subtotal+=item.price*item.quantity; return <CartItem key={item.id} item={item} handleDeleteItem={handleDeleteItem} handleUpdateQty={handleUpdateQty} />;})}
         <div className="p-5">
             <p><span className="font-semibold">Subtotal:</span> {subtotal}</p>
             <p><span className="font-semibold">Discount:</span> <span className="text-sm">10%</span></p>
