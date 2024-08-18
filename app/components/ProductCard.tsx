@@ -6,11 +6,11 @@ export default function ProductCard(props: {product: ProductInterface, setShowSu
     const { id, image, name, price } = props.product;
 
     function handleAddToCart() {
-        const cartItems = window!==undefined ? JSON.parse(localStorage.getItem("cartItems") || "[]"): [];
+        const cartItems = typeof window!==undefined ? JSON.parse(localStorage.getItem("cartItems") || "[]"): [];
 
-        if(cartItems.find((item: CartItemInterface) => item.id === id) && window!==undefined) 
+        if(cartItems.find((item: CartItemInterface) => item.id === id) && typeof window!==undefined) 
             localStorage.setItem("cartItems", JSON.stringify(cartItems.map((item: CartItemInterface) => item.id===id ? {...item, quantity: item.quantity+1} : item)))
-        else if(window!==undefined)
+        else if(typeof window!==undefined)
             localStorage.setItem("cartItems", JSON.stringify([...cartItems, {...props.product, quantity: 1}]));
 
         props.setShowSuccessMessage(true);

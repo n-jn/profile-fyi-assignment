@@ -9,7 +9,7 @@ export default function Cart() {
 
   function handleDeleteItem(id: number) {
     setItems((items) => items.filter((item) => item.id !== id));
-    if (window !== undefined)
+    if (typeof window !== undefined)
       localStorage.setItem(
         "cartItems",
         JSON.stringify(items.filter((item) => item.id !== id))
@@ -20,7 +20,7 @@ export default function Cart() {
     setItems((items) =>
       items.map((item) => (item.id !== id ? item : { ...item, quantity: qty }))
     );
-    if (window !== undefined)
+    if (typeof window !== undefined)
       localStorage.setItem(
         "cartItems",
         JSON.stringify(
@@ -33,7 +33,7 @@ export default function Cart() {
 
   // read stored cart items from local storage and save to state
   useEffect(() => {
-    if (window !== undefined)
+    if (typeof window !== undefined)
       setItems(JSON.parse(localStorage.getItem("cartItems") || "[]"));
   }, []);
 
