@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "image": "https://via.placeholder.com/150/0000FF/808080?text=Wireless+Headphones",
+        "price": 79.99
+    },
+    {
+        "id": 2,
+        "name": "Smartphone",
+        "image": "https://via.placeholder.com/150/FF0000/FFFFFF?text=Smartphone",
+        "price": 699.99
+    },
+    {
+        "id": 3,
+        "name": "Laptop",
+        "image": "https://via.placeholder.com/150/00FF00/000000?text=Laptop",
+        "price": 999.99
+    },
+    {
+        "id": 4,
+        "name": "Smartwatch",
+        "image": "https://via.placeholder.com/150/FFFF00/000000?text=Smartwatch",
+        "price": 199.99
+    },
+    {
+        "id": 5,
+        "name": "Bluetooth Speaker",
+        "image": "https://via.placeholder.com/150/FF00FF/000000?text=Bluetooth+Speaker",
+        "price": 49.99
+    },
+    {
+        "id": 6,
+        "name": "Gaming Console",
+        "image": "https://via.placeholder.com/150/00FFFF/000000?text=Gaming+Console",
+        "price": 399.99
+    },
+    {
+        "id": 7,
+        "name": "Digital Camera",
+        "image": "https://via.placeholder.com/150/800080/FFFFFF?text=Digital+Camera",
+        "price": 549.99
+    },
+    {
+        "id": 8,
+        "name": "Tablet",
+        "image": "https://via.placeholder.com/150/000000/FFFFFF?text=Tablet",
+        "price": 299.99
+    },
+    {
+        "id": 9,
+        "name": "Fitness Tracker",
+        "image": "https://via.placeholder.com/150/FFA500/FFFFFF?text=Fitness+Tracker",
+        "price": 129.99
+    },
+    {
+        "id": 10,
+        "name": "Portable Charger",
+        "image": "https://via.placeholder.com/150/008080/FFFFFF?text=Portable+Charger",
+        "price": 25.99
+    }
+]
